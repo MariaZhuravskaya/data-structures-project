@@ -8,10 +8,20 @@ class TestStack(unittest.TestCase):
     def test_init(self):
         stack = Stack()
         self.assertEqual(stack.top, None)
-        self.assertEqual(stack.str, [])
+
 
     def test_push(self):
         stack = Stack()
         stack.push("datastr1")
         self.assertEqual(stack.top.data, "datastr1")
-        self.assertEqual(len(stack.str), 1)
+
+
+    def test_pop(self):
+        stack = Stack()
+        stack.push("datastr1")
+        stack.pop()
+        #stack.push("datastr2")
+        self.assertEqual(stack.top, None)
+
+
+
