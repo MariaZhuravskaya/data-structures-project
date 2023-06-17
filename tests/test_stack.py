@@ -20,7 +20,6 @@ class TestStack(unittest.TestCase):
         stack = Stack()
         stack.push("datastr1")
         stack.pop()
-        #stack.push("datastr2")
         self.assertEqual(stack.top, None)
 
 

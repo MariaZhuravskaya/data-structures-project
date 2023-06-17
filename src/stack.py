@@ -45,7 +45,6 @@ class Stack:
             nod = self.top.data
             self.top = self.top.next_node
             return nod
-        # else:
-        #     return None
+
 
 
