@@ -21,10 +21,18 @@ class TestStack(unittest.TestCase):
 
 
     def test_dequeue(self):
+        # Создаем пустую очередь
         queue = Queue()
+
+        # Добавляем данных в очередь
         queue.enqueue('data1')
-        queue.dequeue()
-        self.assertEqual(queue.head, None)
+        queue.enqueue('data2')
+        queue.enqueue('data3')
+
+        assert queue.dequeue() == 'data1'
+        assert queue.dequeue() == 'data2'
+        assert queue.dequeue() == 'data3'
+        assert queue.dequeue() is None
 
 
     def test_str(self):
