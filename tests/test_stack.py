@@ -23,4 +23,11 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.top, None)
 
 
+    def test_str(self):
+        stack = Stack()
+        assert str(Stack()) == 'Stack'
+
+
+
+
 
