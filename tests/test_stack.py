@@ -24,7 +24,6 @@ class TestStack(unittest.TestCase):
 
 
     def test_str(self):
-        stack = Stack()
         assert str(Stack()) == 'Stack'
 
 
